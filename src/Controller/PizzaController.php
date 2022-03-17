@@ -13,15 +13,27 @@ class PizzaController extends AbstractController
 
     public function home(): Response
     {
-        $categories = ["vlees", "vegetarisch", "vis"];
-        $pizzas = [
-            "vlees" => ['Salame', 'Hawaii'],
-            "vegetarisch" => ['margarita', 'Groente'],
-            "vis" => ['vis1', 'vis2']
-        ];
+        $categories = ["Vlees", "Vegetarisch", "Vis"];
 
         return $this->render('pizza/home.html.twig', [
-            'pizzas' => $pizzas
+            'categories' => $categories
+        ]);
+    }
+
+    /**
+     * @Route("/products/{category}")
+     */
+    public function products($category): Response
+    {
+
+        $pizzas = [
+            "Vlees" => ['Salami', 'Hawaii'],
+            "Vegetarisch" => ['Margarita', 'Fungi'],
+            "Vis" => ['Tonno', 'Zeevruchten']
+        ];
+
+        return $this->render('pizza/products.html.twig', [
+            'pizzas' => $pizzas[$category]
         ]);
     }
 }

@@ -1,23 +1,58 @@
 {% extends 'base.html.twig' %}
-{% block title%} {{parent()}}piet {% endblock %}
-{% block body %}
-    <h2>Mamamia Pizzaria</h2>
-    {% for pizza in pizzas %}
-        <li>{{ pizza[0] }}</li>
-    {% endfor %}
+{% block title%} {% endblock %}
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% block stylesheets %}
 
-    <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    </div>
 {% endblock %}
 
+{% block body %}
+
+    <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home">Pizzaria</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="p-5 text-center bg-image rounded-3"
+    style=" background-image: url('https://img.freepik.com/free-photo/tasty-pepperoni-pizza-with-mushrooms-olives_79782-1251.jpg?size=626&ext=jpg');
+    height: 400px; background-repeat: no-repeat; background-size: cover;">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br><br>
+
+<div class="container">
+    <div class="row gy-3">
+
+        {% for category in categories %}
+        <div class="col-12 col-md-4">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ category }}</h5>
+                    <p class="card-text">Hier zijn alle {{ category }} pizza's</p>
+                    <a href="/products/{{ category }}" class="btn btn-primary">Bekijk de pizza's</a>
+                </div>
+            </div>
+        </div>
+
+{% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

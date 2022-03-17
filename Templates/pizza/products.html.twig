@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block title%} {% endblock %}
+{% block body %}
+    <h2>Mamamia Pizzaria</h2>
+    {% for pizza in pizzas %}
+        <li>{{ pizza }}</li>
+    {% endfor %}
+{% endblock %}
