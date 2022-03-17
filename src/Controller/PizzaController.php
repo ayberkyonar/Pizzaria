@@ -1,5 +1,4 @@
 <?php
-// src/Controller/LuckyController.php
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -12,9 +11,15 @@ class PizzaController extends AbstractController
      * @Route("/home")
      */
 
-    public function homepage(): Response
+    public function home(): Response
     {
-        $pizzas = ['salame', 'margarita'];
+        $categories = ["vlees", "vegetarisch", "vis"];
+        $pizzas = [
+            "vlees" => ['Salame', 'Hawaii'],
+            "vegetarisch" => ['margarita', 'Groente'],
+            "vis" => ['vis1', 'vis2']
+        ];
+
         return $this->render('pizza/home.html.twig', [
             'pizzas' => $pizzas
         ]);
