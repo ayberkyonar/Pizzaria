@@ -1,8 +1,70 @@
 {% extends 'base.html.twig' %}
 {% block title%} {% endblock %}
+
+{% block stylesheets %}
+
+    <style>
+
+        *{
+            font-family: Ebrima;
+        }
+
+        body{
+            background-color: #e1e1e1;
+        }
+
+    </style>
+
+{% endblock %}
+
 {% block body %}
-    <h2>Mamamia Pizzaria</h2>
-    {% for pizza in pizzas %}
-        <li>{{ pizza }}</li>
-    {% endfor %}
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/home">Pizzaria</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="p-5 text-center bg-image rounded-3"
+             style=" background-image: url('https://img.freepik.com/free-photo/tasty-pepperoni-pizza-with-mushrooms-olives_79782-1251.jpg?size=626&ext=jpg');
+    height: 400px; background-repeat: no-repeat; background-size: cover;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row gy-3">
+
+            {% for pizza in pizzas %}
+                <div class="col-12 col-md-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ pizza }}</h5>
+                            <p class="card-text">Hier zijn alle {{ pizza }} pizza's</p>
+                            <a href="#" class="btn btn-primary">Bekijk de pizza</a>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+
 {% endblock %}
