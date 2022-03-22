@@ -36,4 +36,14 @@ class PizzaController extends AbstractController
             'pizzas' => $pizzas[$category]
         ]);
     }
+
+    /**
+     * @Route("/contact")
+     */
+    public function contact(): Response
+    {
+
+        return $this->render('pizza/contact.html.twig', [
+        ]);
+    }
 }
