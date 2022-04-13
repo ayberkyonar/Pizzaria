@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560df4d2-d39c-40e3-978b-cf8264fe70ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Pizzaria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pizzaria.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/pizza/order.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/pizza/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/pizza/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/products.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PizzaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PizzaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +136,7 @@
       <workItem from="1647944495199" duration="3605000" />
       <workItem from="1648030377017" duration="3249000" />
       <workItem from="1649765261108" duration="3659000" />
+      <workItem from="1649832261250" duration="2130000" />
     </task>
     <servers />
   </component>
@@ -160,6 +153,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
