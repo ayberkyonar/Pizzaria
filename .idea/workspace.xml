@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560df4d2-d39c-40e3-978b-cf8264fe70ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Pizzaria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pizzaria.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/pizza/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/task_success.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/pizza/order.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/order.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/pizza/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/products.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PizzaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PizzaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Pizza.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Pizza.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +113,11 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
     </include_path>
   </component>
   <component name="ProjectId" id="26Y95HLcbs9Xf5yJ5xi109ZIrCW" />
@@ -112,7 +129,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pizza_by_mama" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
@@ -137,6 +154,7 @@
       <workItem from="1649765261108" duration="3659000" />
       <workItem from="1649832261250" duration="5455000" />
       <workItem from="1652260694149" duration="3190000" />
+      <workItem from="1652786127807" duration="5155000" />
     </task>
     <servers />
   </component>

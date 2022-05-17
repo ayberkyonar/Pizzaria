@@ -33,7 +33,7 @@ class Pizza
     private $description;
 
     /**
-     * @ORM\ManyToOne(targetEntity=category::class, inversedBy="pizzas")
+     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="pizzas")
      * @ORM\JoinColumn(nullable=false)
      */
     private $cat;

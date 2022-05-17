@@ -2,9 +2,14 @@
 namespace App\Controller;
 
 use App\Entity\Category;
+use App\Entity\Order;
+use App\Entity\Pizza;
 use App\Repository\CategoryRepository;
+use App\Repository\OrderRepository;
 use App\Repository\PizzaRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -36,23 +41,50 @@ class PizzaController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/products/{id}")
+ /**
+     * @Route("/orderpizza/{id}", name="app_order_pizza")
      */
-    public function order(): Response
+    public function new(Pizza $pizza, Request $request, OrderRepository $orderRepository): Response
     {
 
-        return $this->render('pizza/order.html.twig', [
+        // creates a task object and initializes some data for this example
+        $order = new Order();
+        $order->setPizza($pizza);
+        $order->setStatus("ordered");
+
+        $form = $this->createFormBuilder($order)
+            ->add('fname')
+            ->add('lname')
+            ->add('address')
+            ->add('city')
+            ->add('zipcode')
+            ->add('size')
+            ->add('submit', SubmitType::class, ['label' => 'Order Pizza'])
+            ->getForm();
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            // $form->getData() holds the submitted values
+            // but, the original `$task` variable has also been updated
+            $order = $form->getData();
+
+            // ... perform some action, such as saving the order to the database
+            $orderRepository->add($order);
+            return $this->redirectToRoute('task_success');
+        }
+
+        return $this->renderForm('pizza/order.html.twig', [
+            'form' => $form,
+            'pizza' =>$pizza
         ]);
+
     }
 
     /**
-     * @Route("/contact")
+     * @Route("/order/succes", name="task_success")
      */
-    public function contact(): Response
-    {
-
-        return $this->render('pizza/contact.html.twig', [
-        ]);
+    public function succes():Response{
+        return $this->render('pizza/task_success.html.twig');
     }
+
 }
