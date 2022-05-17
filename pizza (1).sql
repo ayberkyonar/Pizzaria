@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 17 mei 2022 om 14:53
--- Serverversie: 10.4.22-MariaDB
--- PHP-versie: 7.4.27
+-- Gegenereerd op: 17 mei 2022 om 21:50
+-- Serverversie: 10.4.21-MariaDB
+-- PHP-versie: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,9 +39,9 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `picture`, `description`) VALUES
-(1, 'Vlees', '', ''),
-(2, 'Vis', '', ''),
-(3, 'Vegetarisch', '', '');
+(1, 'Vlees', '/img/categories/pizzavlees.jpeg', ''),
+(2, 'Vis', '/img/categories/pizzavis.jpg', ''),
+(3, 'Vegetarisch', '/img/categories/pizzavega.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -60,12 +60,12 @@ CREATE TABLE `doctrine_migration_versions` (
 --
 
 INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
-('DoctrineMigrations\\Version20220412121059', '2022-05-17 13:17:13', 41),
-('DoctrineMigrations\\Version20220412123449', '2022-05-17 13:17:13', 35),
-('DoctrineMigrations\\Version20220413065555', '2022-05-17 13:17:13', 10),
-('DoctrineMigrations\\Version20220413070805', '2022-05-17 13:17:13', 32),
-('DoctrineMigrations\\Version20220413082222', '2022-05-17 13:17:13', 10),
-('DoctrineMigrations\\Version20220517112154', '2022-05-17 13:22:03', 26);
+('DoctrineMigrations\\Version20220412121059', '2022-05-17 18:22:34', 56),
+('DoctrineMigrations\\Version20220412123449', '2022-05-17 18:22:34', 47),
+('DoctrineMigrations\\Version20220413065555', '2022-05-17 18:22:34', 10),
+('DoctrineMigrations\\Version20220413070805', '2022-05-17 18:22:34', 55),
+('DoctrineMigrations\\Version20220413082222', '2022-05-17 18:22:34', 10),
+('DoctrineMigrations\\Version20220517112154', '2022-05-17 18:22:34', 5);
 
 -- --------------------------------------------------------
 
@@ -104,9 +104,9 @@ CREATE TABLE `pizza` (
 --
 
 INSERT INTO `pizza` (`id`, `name`, `picture`, `description`, `cat_id`) VALUES
-(1, 'Salami', '', '', 1),
-(2, 'Tonno', '', '', 2),
-(3, 'Quattro Formaggi', '', '', 3);
+(1, 'Salami', '/img/pizzasalami.jpg', '', 1),
+(2, 'Tonno', '/img/pizzatonno.jpg', '', 2),
+(3, 'Quattro Formaggi', '/img/pizzakaas.jpg', '', 3);
 
 -- --------------------------------------------------------
 
@@ -171,7 +171,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT voor een tabel `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT voor een tabel `pizza`
