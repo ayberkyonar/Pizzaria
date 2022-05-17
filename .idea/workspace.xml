@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560df4d2-d39c-40e3-978b-cf8264fe70ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/categories/pizzavega.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/categories/pizzavis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/categories/pizzavlees.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/pizzakaas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/pizzasalami.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/pizzatonno.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/pizza/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/pizza/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/products.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +150,7 @@
       <workItem from="1652809462995" duration="41000" />
       <workItem from="1652809889003" duration="4000" />
       <workItem from="1652809895182" duration="5432000" />
+      <workItem from="1652818823442" duration="1114000" />
     </task>
     <servers />
   </component>
