@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="560df4d2-d39c-40e3-978b-cf8264fe70ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Templates/pizza/task_success.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/task_success.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/pizzavega.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/pizzavis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/pizzavlees.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pizzakaas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pizzasalami.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pizzatonno.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/pizza/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/pizza/products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/pizza/products.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +124,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pizza_by_mama" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ayberk Yonar\OneDrive - ROC Mondriaan\Documenten\Pizzaria\public\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ayberk Yonar\OneDrive - ROC Mondriaan\Documenten\Pizzaria\public\img\categories" />
       <recent name="C:\Users\SD Student\Documents\Pizzaria\public\css" />
     </key>
   </component>
@@ -142,6 +154,10 @@
       <workItem from="1649832261250" duration="5455000" />
       <workItem from="1652260694149" duration="3190000" />
       <workItem from="1652786127807" duration="5242000" />
+      <workItem from="1652804503764" duration="1833000" />
+      <workItem from="1652809462995" duration="41000" />
+      <workItem from="1652809889003" duration="4000" />
+      <workItem from="1652809895182" duration="5217000" />
     </task>
     <servers />
   </component>
@@ -158,5 +174,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
