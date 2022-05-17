@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 13 apr 2022 om 10:22
+-- Gegenereerd op: 17 mei 2022 om 14:53
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 7.4.27
 
@@ -60,11 +60,12 @@ CREATE TABLE `doctrine_migration_versions` (
 --
 
 INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
-('DoctrineMigrations\\Version20220412121059', '2022-04-12 14:11:06', 42),
-('DoctrineMigrations\\Version20220412123449', '2022-04-12 14:35:27', 61),
-('DoctrineMigrations\\Version20220413065555', '2022-04-13 08:56:22', 61),
-('DoctrineMigrations\\Version20220413070805', '2022-04-13 09:08:10', 205),
-('DoctrineMigrations\\Version20220413082222', '2022-04-13 10:22:31', 60);
+('DoctrineMigrations\\Version20220412121059', '2022-05-17 13:17:13', 41),
+('DoctrineMigrations\\Version20220412123449', '2022-05-17 13:17:13', 35),
+('DoctrineMigrations\\Version20220413065555', '2022-05-17 13:17:13', 10),
+('DoctrineMigrations\\Version20220413070805', '2022-05-17 13:17:13', 32),
+('DoctrineMigrations\\Version20220413082222', '2022-05-17 13:17:13', 10),
+('DoctrineMigrations\\Version20220517112154', '2022-05-17 13:22:03', 26);
 
 -- --------------------------------------------------------
 
@@ -80,7 +81,8 @@ CREATE TABLE `order` (
   `city` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `zipcode` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `pizza_id` int(11) DEFAULT NULL
+  `pizza_id` int(11) DEFAULT NULL,
+  `size` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -169,7 +171,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT voor een tabel `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT voor een tabel `pizza`
