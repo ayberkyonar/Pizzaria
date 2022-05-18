@@ -9,6 +9,7 @@ use App\Repository\OrderRepository;
 use App\Repository\PizzaRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -16,7 +17,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PizzaController extends AbstractController
 {
     /**
-     * @Route("/home")
+     * @Route("/")
      */
 
     public function home(CategoryRepository $repository): Response
@@ -58,7 +59,13 @@ class PizzaController extends AbstractController
             ->add('address')
             ->add('city')
             ->add('zipcode')
-            ->add('size')
+            ->add('size', ChoiceType::class,[
+                'choices'=>[
+                    '20cm' => "20",
+                    '25cm' => "25",
+                    '30cm' => "30",
+                ],
+            ] )
             ->add('submit', SubmitType::class, ['label' => 'Order Pizza'])
             ->getForm();
 
